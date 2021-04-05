@@ -1,5 +1,5 @@
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About Creative.Ink
 
 Writing, like all creative pursuits, takes time, efforts and of course, creativity. My web app aims to improve that creativity. 
 Here are the features that helps you stretch your creative capacities:
