@@ -1,0 +1,363 @@
+/* =============================================================================================
+                                    PROMPT PAGE TITLE SECTION
+   =============================================================================================
+*/
+.prompt-page-title-section {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.prompt-page-title-section button{
+    text-transform: none;
+    margin-top: 5em;
+    margin-bottom: 12em;    
+    color: white;  
+    font-family: 'Montserrat' !important;
+    border-color: white;    
+}
+
+.prompt-page-title-section button:hover, .prompt-button-div button:hover{
+    transition-delay: 40ms;
+    color: rgb(0, 0, 0) !important;
+    background-color: white;
+}
+
+.prompt-page-title {
+    font-family: 'Montserrat';
+    font-size: 5em;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+}
+
+
+
+/* =============================================================================================
+                                 OVERALL PROMPT SECTION WRAPPER
+   =============================================================================================
+*/
+
+.prompt-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em;
+    margin-top: 6vw;
+    padding-bottom: 2vw;
+}
+
+/* =============================================================================================
+                                    API CARD WRAPPER
+   =============================================================================================
+*/
+
+.btn-and-card {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-width: 40%;    
+}
+
+.api-card-wrapper::-webkit-scrollbar{
+    width: 5px;    
+}
+
+.api-card-wrapper::-webkit-scrollbar-track {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: transparent;
+  }
+.api-card-wrapper::-webkit-scrollbar-thumb {
+    background: #bfab81d4;
+    border-radius: 5px;
+    /* border-right: 9px solid rgb(227, 217, 205); */
+  }
+  
+.api-card-wrapper{
+    width: 100%;    
+    background-color: rgb(227, 217, 205);
+    border-radius: 1em;   
+    height: 83.5vh;
+    min-height: 83.5vh;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    margin-right: 1rem;
+}
+
+/* =============================================================================================
+                                    PROMPT API CARD BUTTON SECTION
+   =============================================================================================
+*/
+
+.prompt-button-div{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+
+.prompt-button-div button{
+    text-transform: none;
+    color: white;  
+    font-family: 'Montserrat' !important;
+    border-color: white;       
+    background-color: rgba(162, 161, 153, 0.272);
+    margin-bottom: 1em;
+}
+
+.picture-prompt-btn{
+    margin-right: 3em !important;
+}
+
+/* =============================================================================================
+                                    DEVIANT IMG STYLING
+   =============================================================================================
+*/
+
+.deviant-img-container {
+    overflow: hidden;
+    height: 83.5vh;
+}
+
+.full-image {    
+    width: 100%;    
+    border-radius: 1em; 
+    height: 100%;
+}
+
+.thumbnail {    
+    width: 100%;    
+    filter: blur(7px);
+    border-radius: 1em; 
+    height: 100%;
+}
+
+/* =============================================================================================
+                                    REDDIT PROMPT STYLING
+   =============================================================================================
+*/
+
+.reddit-prompt-wrapper{
+    padding: 5em;
+    font-family: 'Montserrat';
+    color: rgb(121, 110, 84);
+}
+
+.reddit-prompt-wrapper h1{ 
+    font-size: 3em;
+}
+
+.reddit-prompt-wrapper p{
+    font-weight: 500;
+    line-height: 1.5em;
+    font-size: 1.25em;
+}
+
+
+/* =============================================================================================
+                                    PROMPT FORM SECTION
+   =============================================================================================
+*/
+
+/* .MuiContainer-root {
+     height: 100%; 
+} */
+
+.prompt-wrapper .MuiPaper-rounded{
+    border-radius: 1em;
+}
+
+.prompt-wrapper .MuiPaper-root {
+    padding: 1.35em;
+    width: 95%;
+}
+
+                                            /*=====================
+                                                STORY DIV OF FORM
+                                            ===================== */
+                                            .MuiInputBase-inputMultiline {
+                                                height: 18em !important;
+                                            }
+                                            
+                                            textarea::-webkit-scrollbar{
+                                                width: 5px !important;
+                                            }
+                                            
+                                            textarea::-webkit-scrollbar-thumb{
+                                                background: #cacacad4 !important;
+                                                border-radius: 500px !important;
+                                            }
+.please-choose-prompt {
+    color: rgb(253, 84, 84);
+}
+
+.success-submit {
+    color: rgb(109, 171, 16);
+}
+
+.submit-and-error {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}                         
+          
+.submit-and-error a{
+    color: rgb(216, 140, 78);
+}
+
+.submit-and-error .MuiButton-root{
+    display: block;
+    margin-left: auto;
+}
+
+.MuiInputBase-root {
+    font-family: 'Montserrat' !important;   
+    font-weight: 500 !important;
+    line-height: 1.5em !important;
+    color: rgb(99, 95, 95) !important;
+}
+
+/* ============================
+           MEDIA QUERIES
+   ============================
+*/
+
+
+
+
+@media screen and (max-width: 1500px) {
+    .prompt-page-title-section{
+        padding: 3em;
+    }
+
+    .prompt-wrapper{
+        flex-direction: column;
+        padding: 1.25em;
+        /* margin-top: 6vw; */
+        padding-bottom: 2vw;
+    }
+
+    .prompt-button-div{
+        margin-bottom: 2em;
+    }
+
+    .btn-and-card {
+        width: 100%;
+    }
+
+    .form-ultimatum{
+        margin-bottom: 2.1em;
+    }
+
+    .used-prompts-wrapper .MuiContainer-root {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .prompt-wrapper .MuiPaper-root{
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    
+    .prompt-page-title-section{
+        padding: 1em;
+    }
+
+    .prompt-page-title{
+        font-size: 2.7em;
+        margin-top: 1.9em;
+    }
+
+    .prompt-page-title-section button{
+        margin-bottom: 8em;
+    }
+
+    .prompt-wrapper{
+        flex-direction: column;
+        padding: 1.25em;
+        /* margin-top: 6vw; */
+        padding-bottom: 2vw;
+    }
+
+    .btn-and-card {
+        width: 100%;
+    }
+
+    .prompt-button-div{
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+
+    .reddit-prompt-wrapper{
+        padding: 3em;
+    }
+
+    .reddit-prompt-wrapper h1{
+        font-size: 2em;
+    }
+
+    .boss .MuiButton-outlinedSizeLarge {
+        font-size: 0.8em !important;
+    }
+
+    .boss .MuiContainer-root {
+        /* padding-left: 0; */
+    }
+
+    .reddit-prompt-wrapper p{
+        font-weight: 500;
+        line-height: 1.5em;
+        font-size: 1em;
+    }
+
+    .prompt-wrapper .MuiPaper-root {
+        padding: 1em;
+        width: 100%;
+    }
+
+    .MuiContainer-root{
+        padding: 0;
+    }
+
+    .form-ultimatum{
+        margin-right: 2em;
+        margin-bottom: 2.1em;
+    }
+
+    .MuiOutlinedInput-multiline {
+        padding: 18.5px 10px !important;
+    }
+
+    .picture-prompt-btn{
+        margin-right: 0 !important;
+    }
+
+}
+
+@media (max-width: 600px){
+    .form-ultimatum{
+        margin-right: 1em;
+    }
+}
+
+@media (max-width: 400px){
+   .api-card-wrapper{
+       height: 60vh;
+   }
+} 
+
+@media (max-width: 400px){
+    .MuiInputBase-input{
+        font-size: 0.925em !important;
+    }
+}
+
+@media (min-width: 600px){
+    .prompt-wrapper .MuiContainer-root {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}

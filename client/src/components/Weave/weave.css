@@ -1,0 +1,143 @@
+.weave-form{
+    margin-top: 10%;
+    word-wrap: break-word;
+    padding-bottom: 2rem;
+}
+
+.weave-form .MuiInputLabel-shrink {
+    transform: translate(0, 1.5px) scale(0) !important;
+}
+
+.redcross{
+    position: absolute;
+    right: 1.2rem;
+    top: 0.8rem;
+    color:rgb(98, 94, 94);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.title-weave{
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #635F5F;
+}
+
+.title-weave .MuiInputBase-input{
+    font-size: 1.2em !important;
+    font-weight: 600;
+}
+
+.title-weave .MuiInput-underline:before {
+    border-color:rgb(218, 217, 217) !important;
+}
+
+.weave-form .MuiPaper-root{
+    padding: 1.5em 2.5em 2em 2.5em;
+    position: relative;
+}
+
+.weave-form .MuiInputBase-inputMultiline{
+    height: 3.75em !important;
+}
+
+.writer-array-wrapper{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(170, 208, 204, 0);
+    padding-top: 1em;    
+    padding-bottom: 1em;    
+    overflow-x: auto;
+}
+
+.writer-array-wrapper div{
+    margin-right: 0.6rem;
+    border-top-style: solid;
+    border-radius: 2px;
+    padding: 0.70rem;
+}
+
+.weave-story {
+    line-height: 1.8rem;
+    margin-top: 2rem;
+    height: 41vh;
+    /* overflow-y: auto; */
+}
+
+.weave-story span{
+    white-space: pre-line;
+    padding: 5px;
+
+    border-radius: 0.15rem;
+}
+
+.submit-weave{
+    margin-right: 1rem !important; 
+}
+
+.weave-form .submit-and-error{
+    min-height: 3rem;
+}
+
+.weave-info-bar{
+    color: rgb(233, 141, 66);
+}
+
+.btns-array{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.turns-left{
+    color:rgb(50, 103, 111);
+}
+
+.time-left{
+    color:rgb(50, 103, 111);
+}
+
+.separators{
+    color: black;
+}
+
+.react-scroll-to-bottom div::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
+}
+.writer-array-wrapper::-webkit-scrollbar{
+    height: 4px;
+    width: 4px;
+}
+.react-scroll-to-bottom button{
+    right: -9px;
+}
+
+.react-scroll-to-bottom div::-webkit-scrollbar-thumb, .writer-array-wrapper::-webkit-scrollbar-thumb{
+    background: #cacacad4;
+    border-radius: 500px;
+}
+
+@media screen and (max-width: 450px){
+    .weave-form .MuiPaper-root{
+        margin-top: 3em;
+        padding: 1em 1.75em 1.75em 1.75em;
+        position: relative;
+    }
+
+    .redcross{
+        font-size: 1rem;
+    }
+
+    .weave-story {
+        height: 37vh;
+        margin-top: 0.8rem;
+    }
+
+    .weave-info-bar{
+        font-size: 0.85rem;
+        width: 100%;
+    }
+}

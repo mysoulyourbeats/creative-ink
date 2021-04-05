@@ -1,0 +1,145 @@
+body{
+    color: rgb(230, 230, 230);
+    font-family: 'Montserrat', Georgia, sans-serif;
+}
+
+.first-page-wrapper .MuiButton-root {
+    font-family: 'Montserrat', Georgia !important;
+}
+
+.welcome{
+    text-align: center;
+    padding-top: 12vw;
+}
+
+.title {
+    padding: 0;
+    font-family: 'Cherry Swash', Georgia;
+    font-size: 8em;    
+    margin: 0 auto;
+    font-weight: 400;
+
+}
+
+.specs{        
+    font-size: 1.5em;
+}
+
+.first-page-wrapper {
+    -webkit-transform: translate3d(0,0,0);
+}
+
+.first-page-wrapper button{
+    text-transform: none;
+    margin-top: 7vw;
+    margin-bottom: 16vw;    
+    color: white;  
+    font-family: 'Montserrat';
+    border-color: white;    
+}
+.first-page-wrapper button:hover{
+    transition-delay: 40ms;
+    color: rgb(0, 0, 0) !important;
+    background-color: white;
+}
+
+.para-styler{    
+    padding-top: 20vw;
+    text-align: center;
+}
+
+.para-styler h2 {
+    margin: 0;
+    font-size: 5em;
+    padding-left: 4vw;
+}
+
+.para-styler p {
+    margin-top: 10vw;
+    padding-left: 4vw;
+    font-size: 1.725em;
+    font-weight: 300;
+}
+
+.prompt {
+    background: url('../../Images/book-lg.jpg') center no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.401);   
+}
+
+.weave {
+    background: url("../../Images/pen-lg.jpg") center  no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover; 
+    background-color: rgba(0, 0, 0, 0.421);     
+}
+
+.drafts {
+    background: url("../../Images/draft-lg.jpg") center  no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover; 
+    background-color: rgba(0, 0, 0, 0.421);    
+}
+
+@media screen and (max-width: 700px) {
+    .title{
+        font-size: 3em;
+    }
+
+    .specs{
+        font-size: 1em;
+    }
+
+    .para-styler h2{
+        font-size: 1.725em;
+    }
+
+    .para-styler p{
+        font-size: 0.875em;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    .title{
+        font-size: 3em;
+    }
+
+    .specs{
+        font-size: 0.8em;
+    }
+
+    .para-styler h2{
+        font-size: 1.6em;
+    }
+
+    .para-styler p{
+        font-size: 0.80em;
+    }
+
+    .first-page-wrapper .MuiButton-outlinedSizeLarge {
+        font-size: 0.82em !important;
+    }
+
+    .prompt {
+        background: url('../../Images/book-sm.jpg') center no-repeat;
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.401);   
+    }
+    
+    .weave {
+        background: url("../../Images/pen-sm.jpg") center  no-repeat;   
+        background-blend-mode: multiply;
+        background-size: cover; 
+        background-color: rgba(0, 0, 0, 0.421);   
+    }
+    
+    .drafts {
+        background: url("../../Images/draft-sm.jpg") center  no-repeat;
+        background-blend-mode: multiply;
+        background-size: cover; 
+        background-color: rgba(0, 0, 0, 0.421);    
+    }
+}

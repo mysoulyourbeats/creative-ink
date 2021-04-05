@@ -1,0 +1,17 @@
+.full-post-wrapper span{
+    position: relative;
+    padding: 5px;
+    border-radius: 0.15rem;
+}
+
+.MuiTooltip-tooltip{
+    font-size: 0.9rem !important;
+}
+
+.full-post-wrapper .MuiPaper-root{
+    cursor: default;
+}
+
+#weave-paper{
+    padding-bottom: 5em !important;
+}

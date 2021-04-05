@@ -1,0 +1,42 @@
+.auth-popup{
+    position: fixed;    
+    top: 0;    
+    z-index: 2;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(47, 38, 41, 0.952);
+    text-align: center;
+}
+
+.auth-popup p{
+    margin-bottom: 2em;
+}
+
+.cancel-auth{
+    display: block;
+    position: absolute;
+    right: 1em;
+    top: 1.5em;
+    cursor: pointer;
+}
+
+.auth-popup .MuiPaper-root{
+    margin-bottom: 3em !important;
+}
+
+@media screen and (max-width: 750px) {
+    .cancel-auth{
+        top: 1em;
+    }
+
+    .auth-popup .MuiPaper-root{
+        margin-top: 4em !important;
+        margin-bottom: 2em !important;
+    }
+
+    .auth-popup .MuiGrid-root{
+        padding: 5px;
+    }
+}
+

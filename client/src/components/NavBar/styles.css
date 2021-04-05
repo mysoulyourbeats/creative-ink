@@ -1,0 +1,172 @@
+#root{
+    height: 100% ;
+    min-height: 100%;
+}
+.App {
+    min-height: 100%;
+}
+
+html, body{
+    min-height: 100%;
+}
+
+html{    
+    background: url("../../Images/main-lg.jpg") center center fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(39, 37, 37, 0.55);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background: rgb(44, 48, 62);
+    padding: 1.5em;
+}
+
+.outer{
+    align-items: center;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Lato';
+    font-size: 1.25em;
+    color: rgb(211, 202, 202);
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img{
+    margin-bottom: 0.70em;
+    margin-left: 1em;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.logo div{
+    font-family: 'Montserrat';
+    font-weight: 800;
+}
+
+a{
+    color:  rgb(211, 202, 202);
+    text-decoration: none !important;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+
+    html{
+        background: url("../../Images/main-lg.jpg") fixed;
+        /* background-position-x: -3.25vw; */
+        background-blend-mode: multiply;
+        background-repeat: no-repeat !important;
+        background-color: rgba(39, 37, 37, 0.55);
+        background-size: 114vw 100vh;
+    }
+    
+    .nav-options-large{
+        display: none;
+    }
+
+    .hamburger {
+        display: inline;
+        cursor: pointer;
+    }
+
+    .xxx {           
+        font-size: 1.25em;   
+        text-align: center;
+        touch-action: pinch-zoom;
+        position: absolute;        
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(47, 38, 41, 0.952);
+    }
+
+    .nav-options-small div{
+        margin-bottom: 8vh;    
+    }
+    
+    .top-option {
+        margin-top: 12.5vh !important;
+    }
+
+    .logo div{
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .xxx {           
+        font-size: 1.2em;   
+    }
+    .top-option {
+        margin-top: 7.3vh !important;
+    }
+
+    .nav-options-small div{
+        margin-bottom: 6.5vh;    
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    html{
+        background: url("../../Images/main-lg.jpg") fixed;
+        /* background-position-x: -3.25vw; */
+        background-blend-mode: multiply;
+        /* background-repeat: repeat; */
+        background-color: rgba(39, 37, 37, 0.55);
+        background-size: 115vw 100vh;
+    }
+}  
+
+@media screen and (max-width: 500px) {
+
+    html{
+        background: url("../../Images/main-sm.jpg") fixed;
+        /* background-position-x: -3.25vw; */
+        background-blend-mode: multiply;
+        /* background-repeat: repeat; */
+        background-color: rgba(39, 37, 37, 0.55);
+        background-size: 115vw 100vh;
+    }
+}  
+
+@media screen and (min-width: 701px){
+    .xxx{
+        display: none;
+    }
+}
+
+
+
+.MuiButton-root {
+    font-family: 'Lato' !important;  
+    color: white!important;
+}
+
+.MuiFormLabel-root{
+    font-family: 'Lato' !important;
+}
+
+.MuiTypography-h5 {
+    font-family: 'Montserrat' !important;
+    font-weight: 500 !important;
+}  

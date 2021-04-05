@@ -1,0 +1,123 @@
+.drafts-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    height: 100%;
+    margin-left: 7em;
+    margin-bottom: 3em;
+}
+
+.prose-card-wrapper{
+    max-width: 23em;
+    padding-left: 2.5em;  
+    overflow-wrap: break-word;
+}
+
+.prose-card-wrapper a{
+    color: black;
+}
+
+.prose-card-wrapper .MuiPaper-rounded{
+    height: 17em;
+    padding: 3em;
+    border-radius: 15px !important;
+}
+
+.prose-card-wrapper .MuiContainer-root{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.draft-title h3{
+    width: 150px;
+    text-overflow: ellipsis !important;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 2em;
+}
+
+.draft-prose{
+    max-width: 17em;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 9em;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+}
+
+/* ============================
+           EDIT OPTIONS
+   ============================
+*/
+
+.edit-options-div {
+    margin-top: 2em;
+    height: 1em;
+}
+
+.edit-options-div img{
+    cursor: pointer;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.trash{
+   margin-left: 5em;
+}
+
+.create-draft-btn{
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    width: 4.5em;
+}
+
+/* ============================
+           MEDIA QUERIES
+   ============================
+*/
+
+@media screen and (max-width:900px) {
+    .drafts-container{
+        width: 100%;
+        flex-direction: column;
+        margin-left: 0em;
+    }
+
+    .prose-card-wrapper{
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    .create-draft-btn{
+        bottom: 13px;
+        right: 8px;
+    }
+
+    .prose-card-wrapper{
+        padding-left: 6em;
+    }
+}
+
+@media screen and (max-width:660px) {
+}
+
+
+@media screen and (max-width:450px) {
+    .drafts-container{
+        margin: 0 auto !important;
+        margin-bottom: 3em !important;
+    }
+
+    .prose-card-wrapper{
+        width: 85%;
+        padding: 0;
+    }
+
+    .create-draft-btn{
+        bottom: 5px;
+        right: 4px;
+        width: 3.4em;
+    }
+}

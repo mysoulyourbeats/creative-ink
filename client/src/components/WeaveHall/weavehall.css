@@ -1,0 +1,38 @@
+.weave-hally h3{
+    padding: 1em;
+}
+
+.weave-hally .used-story {
+    padding: 1em;
+    padding-top: 0em;
+}
+
+@media screen and (max-width: 450px) {
+    
+    .oopsie h2{
+        font-size: 0.75em;
+    }
+
+    .oopsie .MuiButton-outlinedSizeLarge {
+        font-size: 0.85rem !important;
+    }
+
+    .oopsie button{
+        margin-right: 0 !important;
+        width: 60% !important;
+    }
+
+    .oopsie p {
+        font-size: 0.27em !important;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+    .weave-hally .used-prompts-wrapper h3 {
+        width: 230px;
+    }  
+
+}

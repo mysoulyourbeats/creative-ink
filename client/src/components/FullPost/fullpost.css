@@ -1,0 +1,111 @@
+body{
+    -webkit-tap-highlight-color: transparent;
+}
+
+.full-post-wrapper{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.694);
+    z-index: 2;
+    overflow: auto !important;   
+}
+
+@media screen and (max-width: 500px) {
+    .full-post-wrapper{
+        cursor: default !important;
+    }
+}
+
+.full-post-wrapper .MuiPaper-root{
+    cursor: default;
+}
+
+.full-post-wrapper .MuiContainer-root{
+    margin-top: 6em;
+    margin-bottom: 5em;
+    word-wrap: break-word !important;
+}
+
+.full-post-wrapper .MuiPaper-root{
+    border-radius: 16px !important;
+}
+
+.padder{
+    padding: 8rem;
+}
+
+.full-post-img img{
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 40em;
+}
+
+.full-post-title{
+    font-size: 2em;
+    padding-bottom: 0 !important;
+}
+
+.full-post-written-prompt{
+    font-size: 1.3em;
+    padding: 4em;
+    line-height: 2em;
+    background-color: rgb(227, 217, 205);
+    color: rgb(57, 54, 47);
+    border-radius: 16px;
+    margin-bottom: 4em;
+}
+
+.full-post-prose{
+    white-space: pre-wrap;
+    padding-top: 2em;
+    font-size: 1.2em;
+    line-height: 1.75em;
+    padding-bottom: 2.4em;
+}
+
+.full-post-genre{
+    color:rgb(30, 154, 131);
+    font-size: 1.2em;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.full-post-writer{
+    width: fit-content;
+    margin-left: auto;
+    padding-bottom: 1.5em;
+    font-size: 1.5em;
+    padding-top: 2.5em;
+}
+
+@media screen and (max-width: 500px) {
+    .padder{
+        padding: 2rem;
+    }
+
+    .full-post-title{
+        font-size: 1.25em;
+    }
+
+    .full-post-written-prompt{
+        font-size: 1em;
+        padding: 3rem !important;
+    }
+
+    .full-post-prose, .full-post-genre{
+        font-size: 0.875em;
+    }
+
+    .full-post-writer{
+        font-size: 0.9rem;
+    }
+
+    .full-post-img img {
+        height: 18em;
+    }
+
+}
